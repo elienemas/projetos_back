@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylo.css">
+    <title>Back End no Limite</title>  
+</head> 
+<body>
+    <section class="area-login">
+        <div class="login">     
+           <div>
+                <img src="imagem/brasaoRecife3.png">
+                   </div>
+
+                   <div class="departament">
+                    <h2>SECRETARIA EXECUTIVA DE SAÚDE </h2>
+                      <h3>PROTOCOLO GERAL</h3> 
+                   </div>
+
+<form method="post">
+        <input type="text" placeholder="Digite o usuário" id="login">
+        <input type="password" placeholder="Sua senha" id="senha">         
+        <input type="submit" value= "Acessar" onclick="logar(); return false" >
+</form>
+<p> Ainda não tem uma conta? <a href=""> Criar Conta</a></p>
+<p> <a href=""> Esqueci a senha</a></p>
+</div>
+</section>
+
+
+   <script>
+    var login = document.getElementById('login');
+
+    login.addEventListener("focus",()=>{
+        login.style.borderColor = "#00BFFF";
+    });
+
+    login.addEventListener("blur",()=>{
+        login.style.borderColor = "";
+    });
+
+    var senha = document.getElementById('senha');
+
+senha.addEventListener("focus",()=>{
+    senha.style.borderColor = "#00BFFF";
+});
+
+senha.addEventListener("blur",()=>{
+    senha.style.borderColor = "";
+});
+
+
+    function logar(){ 
+
+    var login = document.getElementById("login").value;
+    var senha =  document.getElementById("senha").value;
+
+    if(login == "admin" && senha == "admin"){
+        alert('seja bem vindo');
+        location.href = "telaProtocolo.html";
+    }else{
+        alert('usuario ou senha inválido');
+    }
+ }
+
+
+   </script>
+
+
+</body>
+</html>

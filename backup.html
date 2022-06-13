@@ -1,0 +1,109 @@
+[]<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cs">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back End no Limite</title>
+    
+</head> 
+<body>
+    <style>
+
+body {font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, white, );
+    overflow: hidden;
+ }
+
+ .login{
+    background-color: rgb(0, 90, 170, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;
+    }
+
+    input{
+
+        padding: 15px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+    }
+    
+     button{
+        background-color: dodgerblue;
+        border: none;
+        padding: 15px;
+        width: 75%;
+        border-radius: 10px;
+        color: white;
+
+    }
+
+    button:hover{
+        background-color: deepskyblue;
+        cursor: pointer; 
+        
+
+     } 
+        
+
+    </Style>
+
+
+
+</head>
+<body>
+
+<section    class="area-login">
+    <div class="login">     
+        <div>
+            <img src=""
+        </div>
+
+<form method="post">
+
+
+<CENTER>SECRETARIA EXECUTIVA DE SAÚDE
+        <CENTER>PROTOCOLO GERAL
+    <h1>LOGIN</h1>
+
+
+    <input type="text" placeholder="Digite o usuário" id="login" autofocus>
+    <br><br>
+    <input type="password" placeholder="Sua senha" id="senha">
+<br><br>
+    <button onclick="logar(); return false"> Acessar </button>
+      
+        </FORM>
+<P> Ainda não tem uma conta? <a href=""> Crir conta</a></P>
+</div>
+</section>
+
+
+   <script>
+
+    function logar(){ 
+
+    var login = document.getElementById("login").value;
+    var senha =  document.getElementById("senha").value;
+
+    if(login == "admin" && senha == "admin"){
+        alert('seja bem vindo');
+        location.href = "telaProtocolo.html";
+    }else{
+        alert('usuario ou senha inválido');
+    }
+ }
+
+
+   </script>
+
+
+</body>
+</html>
